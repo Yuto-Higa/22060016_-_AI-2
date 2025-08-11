@@ -19,3 +19,4 @@ def get_wikipedia_summary(query: str):
         "content_urls": data.get("content_urls", {}).get("desktop", {}).get("page", None)
     }
 
+ 

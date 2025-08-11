@@ -21,3 +21,4 @@ if st.button("検索"):
                 st.markdown(f"[Wikipedia記事全文はこちら]({result['content_urls']})")
         else:
             st.error("該当する記事が見つかりませんでした。")
+ 
