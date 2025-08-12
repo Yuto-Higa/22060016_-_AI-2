@@ -10,7 +10,6 @@ def get_wikipedia_summary(query: str):
     if response.status_code != 200:
         return None
     data = response.json()
-    # 'extract'キーに要約テキストがある
     return {
         "title": data.get("title", ""),
         "description": data.get("description", ""),
@@ -18,5 +17,6 @@ def get_wikipedia_summary(query: str):
         "thumbnail": data.get("thumbnail", {}).get("source", None),
         "content_urls": data.get("content_urls", {}).get("desktop", {}).get("page", None)
     }
+
 
 
